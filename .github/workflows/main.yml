@@ -9,7 +9,7 @@ jobs:
     - id: foo
       uses: meihuisu/hello-world-composite-run-steps-action@v2
       with:
-        who-to-greet: 'Mona the Dumdum'
+        who-to-greet: 'Mona the Dumdum 2'
     - run: echo random-number ${{ steps.foo.outputs.random-number }}
       shell: bash
 
