@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: foo
-      uses: SCECcode/UCVMC/.github/actions@v8
+      uses: SCECcode/UCVMC/.github/actions@action1
       with:
         model-to-build: 'cvmh'
 
