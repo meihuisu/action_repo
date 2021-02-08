@@ -1,15 +1,13 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  get_ucvm:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: A job to build UCVM
     steps:
     - uses: actions/checkout@v2
     - id: foo
-      uses: meihuisu/hello-world-composite-run-steps-action/.github/actions@v8
+      uses: SCECcode/UCVMC/.github/actions@v8
       with:
-        who-to-greet: 'Mona the Dumdum 4'
-    - run: echo random-number ${{ steps.foo.outputs.random-number }}
-      shell: bash
+        model-to-build: 'cvmh'
 
